@@ -98,3 +98,27 @@ Create `install_docker.yml` with the following content:
         msg: "Docker installed successfully: {{ docker_version.stdout }}"
 
 ```
+
+## Execution
+
+Run the playbook with:
+
+```bash
+ansible-playbook -i inventory.ini install_docker.yml
+```
+## Verification
+
+Verify Docker is working on all nodes:
+
+```bash
+ansible docker_servers -i inventory.ini -m command -a "docker run hello-world" -b
+```
+## Notes
+
+1.For CentOS/RHEL systems, replace apt tasks with equivalent yum tasks
+
+2.Adjust firewall settings if needed for Docker networking
+
+3.For proxy environments, add proxy configuration tasks
+
+4.Check for the latest Docker Compose version before installation
