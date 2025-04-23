@@ -1,15 +1,15 @@
-# Ansible Playbook for Docker Installation on 3 VMs
+# 🐳 Ansible Playbook for Docker Installation on 3 VMs
 
 This Ansible playbook automates the installation of Docker on three Ubuntu virtual machines.
 
-## Prerequisites
+## 📋 Prerequisites
 
-- Ansible control node configured
-- SSH access to three target VMs
-- sudo privileges on target VMs
-- Python 3 installed on all VMs
+- ✅ Ansible control node configured  
+- 🔐 SSH access to three target VMs  
+- 🔧 sudo privileges on target VMs  
+- 🐍 Python 3 installed on all VMs  
 
-## Inventory Setup
+## 🗂️ Inventory Setup
 
 Create an `inventory.ini` file with your VM details:
 
@@ -24,18 +24,17 @@ ansible_user=ubuntu
 ansible_ssh_private_key_file=~/.ssh/ansible_key
 ansible_python_interpreter=/usr/bin/python3
 ```
-Replace values with your actual:
 
-IP addresses
+🔁 Replace values with your actual:  
+📍 IP addresses  
+👤 SSH username  
+🗝️ Path to your SSH private key
 
-SSH username
-
-Path to your SSH private key
-
-## Playbook Contents
+## 📝 Playbook Contents
 
 Create `install_docker.yml` with the following content:
-```bash
+
+```yaml
 ---
 - name: Install Docker on multiple hosts
   hosts: docker_servers
@@ -96,29 +95,29 @@ Create `install_docker.yml` with the following content:
     - name: Display Docker version
       debug:
         msg: "Docker installed successfully: {{ docker_version.stdout }}"
-
 ```
 
-## Execution
+## ▶️ Execution
 
 Run the playbook with:
 
 ```bash
 ansible-playbook -i inventory.ini install_docker.yml
 ```
-## Verification
+
+## ✅ Verification
 
 Verify Docker is working on all nodes:
 
 ```bash
 ansible docker_servers -i inventory.ini -m command -a "docker run hello-world" -b
 ```
-## Notes
 
-1.For CentOS/RHEL systems, replace apt tasks with equivalent yum tasks
+## 📝 Notes
 
-2.Adjust firewall settings if needed for Docker networking
+1. 📦 For CentOS/RHEL systems, replace `apt` tasks with equivalent `yum` tasks  
+2. 🔥 Adjust firewall settings if needed for Docker networking  
+3. 🌐 For proxy environments, add proxy configuration tasks  
+4. 📥 Check for the latest Docker Compose version before installation
 
-3.For proxy environments, add proxy configuration tasks
-
-4.Check for the latest Docker Compose version before installation
+---
