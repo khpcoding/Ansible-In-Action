@@ -8,7 +8,8 @@ This project automates the installation and configuration of **Prometheus** and 
 
 ## 🧱 Architecture
 
-![ChatGPT Image Apr 23, 2025, 12_40_47 PM](https://github.com/user-attachments/assets/af0df287-1494-45c2-ab01-1ae5c277cb74)
+<img src="https://github.com/user-attachments/assets/af0df287-1494-45c2-ab01-1ae5c277cb74" alt="Diagram" width="600"/>
+
 
 ---
 
