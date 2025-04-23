@@ -7,7 +7,7 @@ This Ansible playbook automates the setup of a Docker Swarm cluster on three Ubu
 
 ## 📋 Prerequisites
 
-- ✅ Docker installed on all VMs (see [Docker Install Playbook](#))
+- ✅ Docker installed on all VMs (see [Docker Install Playbook](#https://github.com/khpcoding/Ansible-In-Action/tree/main/Docker_Setup))
 - 🐧 Ubuntu-based VMs (3 total)
 - 🔐 SSH access to all VMs from the Ansible control node
 - 🔧 Sudo privileges on target nodes
