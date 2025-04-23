@@ -1,4 +1,4 @@
-# 🐳 Ansible Playbook for Docker Installation on 3 VMs
+# 🚀 Ansible Playbook for Docker Installation on 3 VMs
 
 This Ansible playbook automates the installation of Docker on three Ubuntu virtual machines.
 
