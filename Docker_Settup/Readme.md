@@ -1,4 +1,3 @@
-Here's the same content structured as a `README.md` file:
 
 ```markdown
 # Ansible Playbook for Docker Installation on 3 VMs
