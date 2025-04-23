@@ -8,21 +8,7 @@ This project automates the installation and configuration of **Prometheus** and 
 
 ## 🧱 Architecture
 
-```
-      +-------------------+
-      | Thanos Querier    |
-      | (thanos-query)    |
-      +--------+----------+
-               |
-       +-------+-------+
-       | Thanos Sidecar|
-       | + Prometheus  |     <-- replicated across VMs
-       +-------+-------+
-               |
-      +--------+---------+
-      |  Object Storage  | (S3, MinIO, etc.)
-      +------------------+
-```
+![ChatGPT Image Apr 23, 2025, 12_40_47 PM](https://github.com/user-attachments/assets/af0df287-1494-45c2-ab01-1ae5c277cb74)
 
 ---
 
