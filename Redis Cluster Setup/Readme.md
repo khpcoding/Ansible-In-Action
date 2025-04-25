@@ -28,6 +28,11 @@ redis-cluster-setup/
 └── README.md                   # This file
 ```
 
+
+![ChatGPT Image Apr 25, 2025, 04_04_19 PM](https://github.com/user-attachments/assets/a1617645-3b67-452a-afd8-4547cb064aaa)
+
+
+
 ## Prerequisites
 
 - 3 Linux servers (Ubuntu 20.04/22.04 recommended)
